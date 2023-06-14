@@ -1,3 +1,17 @@
+#patrimonylist{
+    margin: auto;
+    width: 50%;
+    border: 1px solid green;
+    padding: 10px;
+}
+.patrimonyitem{
+    margin-top:10px;
+}
+.sel{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;    
+}
+
 .image-map-container {
     position: relative;
     display:inline-block;
@@ -25,4 +39,11 @@
     transition-timing-function: ease-out;
     transition-property: top, left, right, bottom, background;
     pointer-events: none;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width:90%;
 }
