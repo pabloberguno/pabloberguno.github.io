@@ -1,6 +1,8 @@
 #patrimonylist{    
     width: 50%;
     border: 1px solid green;    
+    margin:auto;
+    padding-left:15px;
 }
 .patrimonyitem{
     margin-top:10px;
@@ -16,7 +18,8 @@
 }
 
 div.polaroid {
-    width: 60%;
+    width: 90%;
+    margin:auto;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
@@ -26,7 +29,6 @@ div.polaroid {
     text-align: center;
     padding: 10px 20px;
   }
-
 .image-map-container {
     position: relative;
     display:inline-block;
