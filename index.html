@@ -5,22 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progate</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
-  <link rel="shortcut icon" href="favicon.ico" >
-  <!--     ┬ ┬┌─┐  ┌─┐┬─┐┌─┐        -->
-  <!--     │││├┤   ├─┤├┬┘├┤         -->
-  <!--     └┴┘└─┘  ┴ ┴┴└─└─┘        -->
-  <!--     ╔═╗╦═╗╔═╗╔═╗╔═╗╔╦╗╔═╗    -->
-  <!--     ╠═╝╠╦╝║ ║║ ╦╠═╣ ║ ║╣     -->
-  <!--     ╩  ╩╚═╚═╝╚═╝╩ ╩ ╩ ╚═╝    -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.min.js"></script>  
+  <script type="text/javascript" src="js/map.js"></script>
 </head>
 <body>
 
-<img src="Mapa-Peon-Candanal-Arroes-sin-localizaciones-sin-logos.png" usemap="#image-map">
 
-<map name="image-map">
-    <area target="_blank" alt="Ferrería de Dueñes" title="Ferrería de Dueñes" href="https://arroes-candanal-peon.rural-tech.es/es/node/502" coords="170,308,37" shape="circle">
-    <area target="_blank" alt="Escuela" title="Escuela" href="https://arroes-candanal-peon.rural-tech.es/es/node/620" coords="115,410,35" shape="circle"></map>    
+  <div class="image-map-container">    
+    <img id="mapavalle" src="Mapa-Peon-Candanal-Arroes-sin-localizaciones-sin-logos.png" alt="" usemap="#image-map">
+    <div class="map-selector"></div>
+  </div>
+
+  <div
+  id="statelist"
+  style="
+    float: left;
+    padding-left: 10px;
+    width: 180px;
+    height: 445px;
+    overflow-y: scroll;
+  "></div>
+  
+<map name="image-map" id="image-map">
+  <area class="popup" state="FD" full="Ferreria" name="ferreria" data-full="Ferrería de Dueñes" href="https://arroes-candanal-peon.rural-tech.es/es/node/502" coords="203,337,136,286" shape="rect">
+</map>
+
+
+
+
+
+
   </body>
 </html>
