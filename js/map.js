@@ -25,8 +25,8 @@ $(document).ready(function () {
         stroke: true
       },
       render_select: {
-        fillColor: 'ff000c',
-        stroke: false
+        fillColor: '2aff00',
+        stroke: true
       },
       mouseoutDelay: 0,
       fadeInterval: 50,

@@ -1,8 +1,6 @@
-#patrimonylist{
-    margin: auto;
+#patrimonylist{    
     width: 50%;
-    border: 1px solid green;
-    padding: 10px;
+    border: 1px solid green;    
 }
 .patrimonyitem{
     margin-top:10px;
@@ -11,6 +9,23 @@
     font-family: "Open Sans", sans-serif;
     font-size: 15px;    
 }
+.andechatext{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;    
+    text-align: justify;
+}
+
+div.polaroid {
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
 
 .image-map-container {
     position: relative;
