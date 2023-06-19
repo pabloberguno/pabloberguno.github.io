@@ -49,9 +49,13 @@ $(document).ready(function () {
   }
 
   function addCheckBoxes(items) {
+    // there are 24 items, so we divide in 12 + 12
     var item;
+    var ct = 0;
+    var stringhtml = "";
     $patrimonylist.children().remove();
     for (var i = 0; i < items.length; i++) {
+      ct++;
       item = $(
         '<div><input type="checkbox" class="patrimonyitem" name="' + items[i].key + '"' 
           + '><span class="sel" key="' 
@@ -59,8 +63,21 @@ $(document).ready(function () {
           + items[i].value 
           + '</span></div>'
       );
-      $patrimonylist.append(item);
+      if (ct == 1)
+        stringhtml = '<div id="left">';        
+      
+      stringhtml = stringhtml.concat(item[0].outerHTML);
+      //$patrimonylist.append(item);
+
+      if (ct == 12)
+        stringhtml = stringhtml.concat('</div><div id="right">');
+        //$patrimonylist.append('</div><div id="right">');
     }
+    if (ct == items.length)
+      stringhtml = stringhtml.concat('</div>');
+      //$patrimonylist.append('</div>');
+
+    $patrimonylist.append(stringhtml);
 
     $patrimonylist
       .find('span.sel')
