@@ -6,24 +6,27 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.min.js"></script>  
-  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 
-  <div id="mapandlegend">    
-    <div class="image-map-container">    
-      <img id="mapavalle" src="img/mapa-Horreos-Paneras-Cabazos.png" alt="Mapa de Peón, Candanal y Arroes" title="Mapa de Peón, Candanal y Arroes" class="displayed" usemap="#image-map">  
-      <div class="map-selector"></div>
-    </div>      
-    <map name="image-map" id="image-map">          
-      <area title="Cabazos" class="popup" target="" data-full="Cabazos" alt="Cabazos" name="Cabazos" href="https://horreos.rural-tech.es/es/taxonomy/term/9" coords="368,396,171" shape="circle">
-      <area title="Hórreos" class="popup" target="" data-full="Hórreos" alt="Hórreos" name="Hórreos" href="https://horreos.rural-tech.es/es/taxonomy/term/3" coords="905,395,171" shape="circle">
-      <area title="Paneras" class="popup" target="" data-full="Paneras" alt="Paneras" name="Paneras" href="https://horreos.rural-tech.es/es/taxonomy/term/41" coords="1431,396,169" shape="circle">            
-    </map>    
-    <div style="clear:both"></div>
-    En Asturias existen un gran número de hórreos, paneras y cabazos que tienen como finalidad el almacén de alimentos. A través de imágenes de satélite se han geolocalizado cerca de 30.000 edificaciones de estas características.
-    En esta plataforma colaborativa podrás consultar la información incluida de estas construcciones y participar incluyendo la información de las mismas. Contáctanos.
-  </div>
+  <div class="polaroid">
+    <img src="img/mapa-Horreos-Paneras-Cabazos.png" alt="Participantes en el espacio intergeneracional" style="width:100%" usemap="#image-map">
+    <map name="image-map" id="image-map">      
+      <area title="Cabazos" class="popup" target="_blank" data-full="Cabazos" alt="Cabazos" name="Cabazos" href="https://horreos.rural-tech.es/es/taxonomy/term/9" coords="368,396,171" shape="circle">
+      <area title="Hórreos" class="popup" target="_blank" data-full="Hórreos" alt="Hórreos" name="Hórreos" href="https://horreos.rural-tech.es/es/taxonomy/term/3" coords="905,395,171" shape="circle">
+      <area title="Paneras" class="popup" target="_blank" data-full="Paneras" alt="Paneras" name="Paneras" href="https://horreos.rural-tech.es/es/taxonomy/term/41" coords="1431,396,169" shape="circle">            
+    </map>
+
+    <div class="container">
+    <p>
+      En Asturias existen un gran número de hórreos, paneras y cabazos que tienen como finalidad el almacén de alimentos. A través de imágenes de satélite se han geolocalizado cerca de 30.000 edificaciones de estas características.
+      En esta plataforma colaborativa podrás consultar la información incluida de estas construcciones y participar incluyendo la información de las mismas. Contáctanos.
+    </p>
+    </div>
+  </div>  
+
   
 </body>
 </html>
