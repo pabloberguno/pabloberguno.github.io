@@ -1,0 +1,22 @@
+body{font-family: "Open Sans", sans-serif;font-size: 16px;line-height: 1.5;color: #333;background-color: #fff;text-align: justify;}
+.text-center{text-align: center;}
+.patrimonyitem{margin-top:10px;}
+
+/* Images with text */
+div.container {text-align: center;padding: 10px 20px;}
+div.polaroid {width: 90%;margin:auto;background-color: white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom: 25px;}
+div.video {width: 90%;margin:auto;background-color: white;margin-bottom: 25px;}
+
+/* Image map */
+.image-map-container {position: relative;display:inline-block;}
+.image-map-container img {display:block;}
+.image-map-container .map-selector {left:0;top:0;right:0;bottom:0;color:#546E7A00;transition-duration: .3s;transition-timing-function: ease-out;transition-property: top, left, right, bottom, color;}
+.image-map-container .map-selector.hover {color:#546E7A80;}
+.map-selector:after {content: '';position: absolute;top: inherit;right: inherit;bottom: inherit;left: inherit;background: currentColor;transition-duration: .3s;transition-timing-function: ease-out;transition-property: top, left, right, bottom, background;pointer-events: none;}
+img.displayed {display: block;margin-left: auto;margin-right: auto; width:100%;}
+#mapandlegend{width:90%;}
+
+/* Legend in map */
+#patrimonylist{width: 100%;padding-left:15px;padding-bottom: 15px;}
+#left{width: 50%; float:left}
+#right{width: 50%;float: right;}
