@@ -49,7 +49,7 @@ $(document).ready(function () {
   }
 
   function addCheckBoxes(items) {
-    // there are 24 items, so we divide in 12 + 12
+    // there are 19 items, so we divide in 10 + 9
     var item;
     var ct = 0;
     var stringhtml = "";
@@ -69,7 +69,7 @@ $(document).ready(function () {
       stringhtml = stringhtml.concat(item[0].outerHTML);
       //$patrimonylist.append(item);
 
-      if (ct == 12)
+      if (ct == 10)
         stringhtml = stringhtml.concat('</div><div id="right">');
         //$patrimonylist.append('</div><div id="right">');
     }
